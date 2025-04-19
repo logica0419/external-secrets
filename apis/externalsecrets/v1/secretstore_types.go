@@ -204,6 +204,10 @@ type SecretStoreProvider struct {
 	// CloudruSM configures this store to sync secrets using the Cloud.ru Secret Manager provider
 	// +optional
 	CloudruSM *CloudruSMProvider `json:"cloudrusm,omitempty"`
+
+	// Sakura configures this store to sync secrets using the Sakura Cloud Secret Manager provider
+	// +optional
+	Sakura *SakuraProvider `json:"sakura,omitempty"`
 }
 
 type CAProviderType string
