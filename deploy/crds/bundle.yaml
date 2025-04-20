@@ -6115,6 +6115,7 @@ spec:
                           description: VaultResourceID is the resource ID of the target vault.
                           type: string
                         zone:
+                          default: is1a
                           description: Zone is the zone where the target vault is located.
                           enum:
                             - is1a
@@ -6125,7 +6126,6 @@ spec:
                       required:
                         - auth
                         - vaultResourceID
-                        - zone
                       type: object
                     scaleway:
                       description: Scaleway configures this store to sync secrets using the Scaleway provider.
@@ -17842,6 +17842,7 @@ spec:
                           description: VaultResourceID is the resource ID of the target vault.
                           type: string
                         zone:
+                          default: is1a
                           description: Zone is the zone where the target vault is located.
                           enum:
                             - is1a
@@ -17852,7 +17853,6 @@ spec:
                       required:
                         - auth
                         - vaultResourceID
-                        - zone
                       type: object
                     scaleway:
                       description: Scaleway configures this store to sync secrets using the Scaleway provider.
