@@ -4857,15 +4857,6 @@ spec:
                         vaultResourceID:
                           description: VaultResourceID is the resource ID of the target vault.
                           type: string
-                        zone:
-                          default: is1a
-                          description: Zone is the zone where the target vault is located.
-                          enum:
-                            - is1a
-                            - is1b
-                            - tk1a
-                            - tk1b
-                          type: string
                       required:
                         - auth
                         - vaultResourceID
@@ -14790,15 +14781,6 @@ spec:
                           type: object
                         vaultResourceID:
                           description: VaultResourceID is the resource ID of the target vault.
-                          type: string
-                        zone:
-                          default: is1a
-                          description: Zone is the zone where the target vault is located.
-                          enum:
-                            - is1a
-                            - is1b
-                            - tk1a
-                            - tk1b
                           type: string
                       required:
                         - auth
