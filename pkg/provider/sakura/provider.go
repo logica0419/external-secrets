@@ -19,7 +19,7 @@ import (
 	"fmt"
 
 	sakuraclient "github.com/sacloud/api-client-go"
-	"github.com/sacloud/iaas-api-go"
+	"github.com/sacloud/secretmanager-api-go"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/webhook/admission"
 
@@ -51,10 +51,6 @@ func (p *Provider) NewClient(ctx context.Context, store esv1.GenericStore, kube 
 		return nil, err
 	}
 
-	// Set the zone to is1a
-	// 	The zone doesn't matter for Sakura Cloud Secret Manager as it is a global resource
-	baseURL := fmt.Sprintf("https://secure.sakura.ad.jp/cloud/zone/%s/api/cloud/1.1/secretmanager/vaults/%s/secrets", "is1a", provider.VaultResourceID)
-
 	opt, err := sakuraclient.DefaultOption()
 	if err != nil {
 		return nil, fmt.Errorf("failed to retrieve DefaultOption: %w", err)
@@ -73,11 +69,13 @@ func (p *Provider) NewClient(ctx context.Context, store esv1.GenericStore, kube 
 		AccessTokenSecret: accessTokenSecret,
 	})
 
-	c := iaas.NewClientWithOptions(opt)
+	client, err := secretmanager.NewClient()
+	if err != nil {
+		panic(err)
+	}
 
 	return &Client{
-		baseURL: baseURL,
-		client:  c,
+		client: secretmanager.NewSecretOp(client, provider.VaultResourceID),
 	}, nil
 }
 

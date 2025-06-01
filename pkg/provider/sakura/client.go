@@ -17,15 +17,14 @@ package sakura
 import (
 	"context"
 
-	"github.com/sacloud/iaas-api-go"
+	"github.com/sacloud/secretmanager-api-go"
 	corev1 "k8s.io/api/core/v1"
 
 	esv1 "github.com/external-secrets/external-secrets/apis/externalsecrets/v1"
 )
 
 type Client struct {
-	baseURL string
-	client  *iaas.Client
+	client secretmanager.SecretAPI
 }
 
 // Check if the Client satisfies the esv1.SecretsClient interface.
