@@ -814,8 +814,8 @@ github.com/sacloud/go-http v0.1.9 h1:Xa5PY8/pb7XWhwG9nAeXSrYXPbtfBWqawgzxD5co3VE
 github.com/sacloud/go-http v0.1.9/go.mod h1:DpDG+MSyxYaBwPJ7l3aKLMzwYdTVtC5Bo63HActcgoE=
 github.com/sacloud/packages-go v0.0.11 h1:hrRWLmfPM9w7GBs6xb5/ue6pEMl8t1UuDKyR/KfteHo=
 github.com/sacloud/packages-go v0.0.11/go.mod h1:XNF5MCTWcHo9NiqWnYctVbASSSZR3ZOmmQORIzcurJ8=
-github.com/sacloud/secretmanager-api-go v0.1.0 h1:cdZA+w2zKq58X0NiHV2lzYeYBimOQIq23DuuJoaCxtQ=
-github.com/sacloud/secretmanager-api-go v0.1.0/go.mod h1:V8oNvqIq7HEuhw8LRwUKnMu1Lou00PCxhr0frO0Zqog=
+github.com/sacloud/secretmanager-api-go v0.1.1 h1:scy03+g7JxPA6T7Z/bc29r+Za3V6N62ouKtHlmmfXME=
+github.com/sacloud/secretmanager-api-go v0.1.1/go.mod h1:V8oNvqIq7HEuhw8LRwUKnMu1Lou00PCxhr0frO0Zqog=
 github.com/santhosh-tekuri/jsonschema/v5 v5.3.1 h1:lZUw3E0/J3roVtGQ+SCrUrg3ON6NgVqpn3+iol9aGu4=
 github.com/santhosh-tekuri/jsonschema/v5 v5.3.1/go.mod h1:uToXkOrWAZ6/Oc07xWQrPOhJotwFIyu2bBVN41fcDUY=
 github.com/scaleway/scaleway-sdk-go v1.0.0-beta.33 h1:KhF0WejiUTDbL5X55nXowP7zNopwpowa6qaMAWyIE+0=

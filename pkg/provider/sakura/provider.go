@@ -51,11 +51,6 @@ func (p *Provider) NewClient(ctx context.Context, store esv1.GenericStore, kube 
 		return nil, err
 	}
 
-	opt, err := sakuraclient.DefaultOption()
-	if err != nil {
-		return nil, fmt.Errorf("failed to retrieve DefaultOption: %w", err)
-	}
-
 	accessToken, err := resolvers.SecretKeyRef(ctx, kube, store.GetKind(), namespace, &provider.Auth.SecretRef.AccessToken)
 	if err != nil {
 		return nil, fmt.Errorf("failed to resolve auth.secretRef.accessToken: %w", err)
@@ -64,18 +59,14 @@ func (p *Provider) NewClient(ctx context.Context, store esv1.GenericStore, kube 
 	if err != nil {
 		return nil, fmt.Errorf("failed to resolve auth.secretRef.accessTokenSecret: %w", err)
 	}
-	opt = sakuraclient.MergeOptions(opt, &sakuraclient.Options{
-		AccessToken:       accessToken,
-		AccessTokenSecret: accessTokenSecret,
-	})
 
-	client, err := secretmanager.NewClient()
+	client, err := secretmanager.NewClient(sakuraclient.WithApiKeys(accessToken, accessTokenSecret))
 	if err != nil {
-		panic(err)
+		return nil, fmt.Errorf("failed to create Sakura Cloud client: %w", err)
 	}
 
 	return &Client{
-		client: secretmanager.NewSecretOp(client, provider.VaultResourceID),
+		api: secretmanager.NewSecretOp(client, provider.VaultResourceID),
 	}, nil
 }
 

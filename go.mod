@@ -108,7 +108,7 @@ require (
 	github.com/previder/vault-cli v0.1.2
 	github.com/pulumi/esc-sdk/sdk v0.12.1
 	github.com/sacloud/api-client-go v0.3.0
-	github.com/sacloud/secretmanager-api-go v0.1.0
+	github.com/sacloud/secretmanager-api-go v0.1.1
 	github.com/scaleway/scaleway-sdk-go v1.0.0-beta.33
 	github.com/sethvargo/go-password v0.3.1
 	github.com/spf13/pflag v1.0.6
