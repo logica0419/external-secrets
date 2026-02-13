@@ -171,7 +171,7 @@ require (
 	github.com/external-secrets/external-secrets/providers/v1/webhook v0.0.0-20251103080423-08fa383f42e5
 	github.com/external-secrets/external-secrets/providers/v1/yandex v0.0.0-00010101000000-000000000000
 	github.com/external-secrets/external-secrets/runtime v0.0.0
-	github.com/maxbrunsfeld/counterfeiter/v6 v6.12.0
+	github.com/maxbrunsfeld/counterfeiter/v6 v6.11.2
 	sigs.k8s.io/yaml v1.6.0
 )
 
@@ -221,7 +221,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/sts v1.40.1 // indirect
 	github.com/aws/smithy-go v1.23.2 // indirect
 	github.com/aymanbagabas/go-osc52/v2 v2.0.1 // indirect
-	github.com/benbjohnson/clock v1.3.0 // indirect
+	github.com/benbjohnson/clock v1.3.5 // indirect
 	github.com/bgentry/go-netrc v0.0.0-20140422174119-9fd32a8b3d3d // indirect
 	github.com/blang/semver v3.5.1+incompatible // indirect
 	github.com/bradleyfalzon/ghinstallation/v2 v2.17.0 // indirect
@@ -243,15 +243,18 @@ require (
 	github.com/cyphar/filepath-securejoin v0.6.0 // indirect
 	github.com/danieljoos/wincred v1.2.3 // indirect
 	github.com/djherbis/times v1.6.0 // indirect
+	github.com/dlclark/regexp2 v1.11.5 // indirect
 	github.com/dylibso/observe-sdk/go v0.0.0-20240828172851-9145d8ad07e1 // indirect
 	github.com/emirpasic/gods v1.18.1 // indirect
 	github.com/erikgeiser/coninput v0.0.0-20211004153227-1c3628e74d0f // indirect
 	github.com/extism/go-sdk v1.7.1 // indirect
-	github.com/fatih/structs v1.1.0 // indirect
 	github.com/felixge/httpsnoop v1.0.4 // indirect
 	github.com/fortanix/sdkms-client-go v0.4.1 // indirect
 	github.com/fxamacker/cbor/v2 v2.9.0 // indirect
 	github.com/gabriel-vasile/mimetype v1.4.11 // indirect
+	github.com/go-faster/errors v0.7.1 // indirect
+	github.com/go-faster/jx v1.1.0 // indirect
+	github.com/go-faster/yaml v0.4.6 // indirect
 	github.com/go-git/gcfg v1.5.1-0.20230307220236-3a3c6141e376 // indirect
 	github.com/go-git/go-billy/v5 v5.6.2 // indirect
 	github.com/go-git/go-git/v5 v5.16.3 // indirect
@@ -317,6 +320,7 @@ require (
 	github.com/muesli/cancelreader v0.2.2 // indirect
 	github.com/muesli/termenv v0.16.0 // indirect
 	github.com/ngrok/ngrok-api-go/v7 v7.6.0 // indirect
+	github.com/ogen-go/ogen v1.14.0 // indirect
 	github.com/opentracing/basictracer-go v1.1.0 // indirect
 	github.com/passbolt/go-passbolt v0.7.2 // indirect
 	github.com/pgavlin/fx v0.1.6 // indirect
@@ -331,9 +335,9 @@ require (
 	github.com/rogpeppe/go-internal v1.14.1 // indirect
 	github.com/sacloud/api-client-go v0.3.5 // indirect
 	github.com/sacloud/go-http v0.1.9 // indirect
-	github.com/sacloud/iaas-api-go v1.25.0 // indirect
 	github.com/sacloud/packages-go v0.0.12 // indirect
 	github.com/sacloud/saclient-go v0.2.7 // indirect
+	github.com/sacloud/secretmanager-api-go v0.3.1 // indirect
 	github.com/santhosh-tekuri/jsonschema/v5 v5.3.1 // indirect
 	github.com/scaleway/scaleway-sdk-go v1.0.0-beta.35 // indirect
 	github.com/segmentio/asm v1.2.1 // indirect
